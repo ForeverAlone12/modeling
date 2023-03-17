@@ -1,6 +1,7 @@
 import lab.ILab;
 import lab.Lab1;
 import lab.Lab2;
+import lab.Lab3;
 import lib.RandomValue;
 import lib.distribution.Gaussian;
 
@@ -9,10 +10,10 @@ public class Main {
     /**
      * Количество значений случайной величины.
      */
-    private final static int VOLUME = 10000;
+    private final static int VOLUME = 100000;
     public static void main(String[] args) {
 
-        ILab lab1 = new Lab2();
-        lab1.start(VOLUME);
+        ILab lab = new Lab3();
+        lab.start(VOLUME);
     }
 }
